@@ -8,7 +8,7 @@ namespace Zadanie_5.Controllers
     [ApiController]
     public class StudentsController : ControllerBase
     {
-        private static List<Student> _studenci = new List<Student>();//tu można wpisać bazę pobieraną z SQL Server
+        private static List<Student> _studenci = new List<Student>();
 
         [HttpGet("getStudents")]
         public ActionResult<IEnumerable<Student>> GetAll()
